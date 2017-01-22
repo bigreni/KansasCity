@@ -62,7 +62,7 @@ function askRating()
 {
   AppRate.preferences = {
   openStoreInApp: true,
-  useLanguage:  'fi',
+  useLanguage:  'en',
   usesUntilPrompt: 10,
   promptAgainForEachNewVersion: true,
   storeAppURL: {
