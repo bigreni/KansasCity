@@ -127,3 +127,64 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+.hidden { display: none !important; visibility: hidden; }
+
+div.wait, img.wait { padding-bottom: 5px; width: 20px; height: 20px; }
+
+div.errorBox { opacity: 0; margin-bottom: 30px; }
+
+.errorBox table { font-size: 16px; margin: 20px auto; color: #9d0020; }
+.errorBox td { text-align: center; }
+
+div.resultBox { opacity: 0; margin-bottom: 30px; }
+.resultBox table { margin: 20px auto; }
+.resultBox td { text-align: center; }
+
+.resultBox td.stopTime
+{
+	color: #000;
+	font-size: 1.5em;
+	padding: 3px 10px;
+}
+
+.resultBox td.timeLabel
+{
+	color: #000;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+h2 { text-shadow: 1px 1px 0px #000; }
+
+table.routeBox { margin: 3px 3px 7px 3px; }
+table.routeBox td { padding: 1px; vertical-align: middle; }
+table.routeBox tr.closer td { padding-top: 0px; }
+
+p.stopLabel, p.stopCancelledLabel
+{
+	color: #555;
+	font-size: 10px;
+	padding: 0;
+	margin-top: -5px;
+}
+
+p.stopCancelledLabel
+{
+	color: #9f0020;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+h1, h2
+{
+	margin-left: auto; margin-right: auto;
+	text-align: center;
+	color: #438ac5;
+	border-bottom: 2px solid #2d3437;
+	text-shadow: 1px 1px 1px #000;
+}
