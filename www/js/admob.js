@@ -3,7 +3,7 @@
             document.addEventListener('deviceready', checkFirstUse, false);
         } else {
             checkFirstUse();
-        }
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});        }
     }
     var admobid = {};
     if (/(android)/i.test(navigator.userAgent)) {
