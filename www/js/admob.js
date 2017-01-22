@@ -85,6 +85,7 @@ TransitMaster.StopTimes = function (options) {
     initialize();
 
     function initialize() {
+        alert('1');
         $("#MainMobileContent_routeList").bind("change", function () {
             var temp = $("#MainContent_routeList").val();
 
@@ -113,11 +114,12 @@ TransitMaster.StopTimes = function (options) {
                 }
             });
         }
-
+        alert('2');
         getRoutes();
     }
 
     function getRoutes() {
+        alert('3');
         $("#MainMobileContent_routeList").text("Loading	routes...");
         $("#routeWait").removeClass("hidden");
 
