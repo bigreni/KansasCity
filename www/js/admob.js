@@ -2,7 +2,7 @@
         if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {
             document.addEventListener('deviceready', checkFirstUse, false);
         } else {
-            checkFirstUse();
+            //checkFirstUse();
 			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});        }
     }
     var admobid = {};
