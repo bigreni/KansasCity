@@ -89,7 +89,6 @@ TransitMaster.StopTimes = function (options) {
             var temp = $("#MainContent_routeList").val();
 
             if (temp != "") {
-                $.cookie("route", temp, { expires: 30 });
                 getDirections();
             }
         });
@@ -98,7 +97,6 @@ TransitMaster.StopTimes = function (options) {
             var temp = $("#MainContent_directionList").val();
 
             if (temp != "") {
-                $.cookie("direction", temp, { expires: 30 });
                 reset();
 
                 if (settings.includeStops)
@@ -111,28 +109,12 @@ TransitMaster.StopTimes = function (options) {
                 var temp = $("#MainMobileContent_stopList").val();
 
                 if (temp != "") {
-                    $.cookie("stop", temp, { expires: 30 });
                     getArrivalTimes();
                 }
             });
         }
 
         getRoutes();
-    }
-
-
-    function checkListCookie(key, list) {
-        if (initialView) {
-            var temp = $.cookie(key);
-            if (temp != null && $("#" + list + " option[value=" + temp + "]").length > 0) {
-                $("#" + list).val(temp).change();
-                return true;
-            }
-            else
-                initialView = false;
-        }
-
-        return false;
     }
 
     function getRoutes() {
@@ -157,7 +139,6 @@ TransitMaster.StopTimes = function (options) {
                     $(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
                 $(list).val('0');
-                checkListCookie("route", "MainMobileContent_routeList");
             },
             error: function () {
                 $("#MainMobileContent_routeList").text("Failed to load routes");
@@ -206,7 +187,6 @@ TransitMaster.StopTimes = function (options) {
                     $(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
 
-                checkListCookie("direction", "MainMobileContent_directionList");
 
                 if (!settings.includeStops)
                     initialView = false;
@@ -250,7 +230,6 @@ TransitMaster.StopTimes = function (options) {
                 });
 
                 $(list).selectedIndex = 0;
-                 checkListCookie("stop", "MainMobileContent_stopList");
 
                 initialView = false;
             },
