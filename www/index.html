@@ -17,7 +17,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/admob.js"></script>
 	<script type="text/javascript" src="js/jsrender.min.js"></script>
-    <div id="fullpage" data-role="page">
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>    <div id="fullpage" data-role="page">
 		<div id="contentBox" class="box">
 			<h1>Live Arrival Times</h1>
 			<table class="routeBox" style="width: 100vw;">
@@ -26,6 +26,7 @@
                     </tr>
             <tr>
     	        <td><select id="MainMobileContent_routeList" class=".ui-select .ui-btn select" style="width: 90%;">
+                        <option value="0">Select a route...</option>
                     </select>
                 </td>
 					<td><div class="wait"><img id="routeWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
@@ -35,6 +36,7 @@
 				</tr>	
                 <tr>
                     	<td><select id="MainMobileContent_directionList">
+                                <option value="0">Select a direction...</option>
                             </select>
                         </td>
 					<td><div class="wait"><img id="directionWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
@@ -45,6 +47,7 @@
 				</tr>
                 <tr>
                     <td><select id="MainMobileContent_stopList">
+                            <option value="0">Select a stop...</option>
                         </select>
                     </td>
 					<td><div class="wait"><img id="stopWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
