@@ -2,8 +2,8 @@
         if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {
             document.addEventListener('deviceready', checkFirstUse, false);
         } else {
-            //checkFirstUse();
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});        }
+            checkFirstUse();
+        }
     }
     var admobid = {};
     if (/(android)/i.test(navigator.userAgent)) {
@@ -54,7 +54,7 @@
 
    function checkFirstUse()
     {
-            askRating();
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            askRating();
             initApp();
     }
 
