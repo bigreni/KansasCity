@@ -154,7 +154,8 @@ TransitMaster.StopTimes = function (options) {
 
                 $(list).get(0).options[$(list).get(0).options.length] = new Option("Select a route...", "0");
                 $.each(msg.d, function (index, item) {
-                    $(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
+                    $(list).append($("<option />").val(item.id).text(item.name));
+                    //$(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
                 $(list).val('0');
                 checkListCookie("route", "MainMobileContent_routeList");
@@ -203,7 +204,8 @@ TransitMaster.StopTimes = function (options) {
 
                 $(list).get(0).options[$(list).get(0).options.length] = new Option("Select a direction...", "");
                 $.each(msg.d, function (index, item) {
-                    $(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
+                    $(list).append($("<option />").val(item.id).text(item.name));
+                    //$(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
 
                 checkListCookie("direction", "MainMobileContent_directionList");
@@ -246,10 +248,10 @@ TransitMaster.StopTimes = function (options) {
                 $(list).get(0).options[$(list).get(0).options.length] = new Option("Select a stop...", "");
 
                 $.each(msg.d, function (index, item) {
-                    $(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
+                    $(list).append($("<option />").val(item.id).text(item.name));
+                    //$(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
 
-                $(list).selectedIndex = 0;
                  checkListCookie("stop", "MainMobileContent_stopList");
 
                 initialView = false;

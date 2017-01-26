@@ -6,7 +6,7 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <!-- Include jQuery Mobile stylesheets -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
 <!-- Include the jQuery library -->
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <!-- Include the jQuery Mobile library -->
@@ -25,8 +25,7 @@
 					<td colspan="2">Route:</td>
                     </tr>
             <tr>
-    	        <td><select id="MainMobileContent_routeList" class=".ui-select .ui-btn select" style="width: 90%;">
-                        <option value="0">Select a route...</option>
+    	        <td><select id="MainMobileContent_routeList" class="seleccion">
                     </select>
                 </td>
 					<td><div class="wait"><img id="routeWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
@@ -36,7 +35,6 @@
 				</tr>	
                 <tr>
                     	<td><select id="MainMobileContent_directionList">
-                                <option value="0">Select a direction...</option>
                             </select>
                         </td>
 					<td><div class="wait"><img id="directionWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
@@ -47,7 +45,6 @@
 				</tr>
                 <tr>
                     <td><select id="MainMobileContent_stopList">
-                            <option value="0">Select a stop...</option>
                         </select>
                     </td>
 					<td><div class="wait"><img id="stopWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>

@@ -35,62 +35,6 @@ div#fullpage {
 	padding: 0;
 }
 
-/*a:link {
-    color: #000;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-a:active {
-    color: #000;
-    text-decoration: none;
-}*/
-
-a.langOption{
-    text-decoration: none;
-}
-
-a.backButton{
-    text-decoration: initial;
-}
-
-h3.proverbTitle {
-    background-color: #ccefdb;
-}
-
-a.backButton {
-    background-color: #ccefdb;
-}
-
-p.title{
-    font-size: large;
-    font-family: Arial;
-    font-style: italic;
-    text-align: center;
-}
-
-h1.selectLanguage {
-    margin: 10px 0 10px 0;
-    /*background-color: #ccefdb;*/
-}
-
-.ui-page .ui-content .ui-listview .ui-li-desc {
-    white-space : normal;
-}
-
-.ui-page .ui-content .ui-listview .ui-li-heading {
-    white-space : normal;
-}​​
-
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -188,3 +132,31 @@ h1, h2
 	border-bottom: 2px solid #2d3437;
 	text-shadow: 1px 1px 1px #000;
 }
+
+select
+{
+	width:100%;
+	background-color: #CCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+    text-align: left;
+}
+
+option.displayNone
+{
+	display:none;
+}
+
+div.seleccion
+{
+	margin : 8px;
+	margin-bottom : 16px;
+}
+
+/*select#MainMobileContent_stopList
+{
+    -webkit-appearance: none;
+    font-size: 10px;
+}*/
