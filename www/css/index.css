@@ -149,10 +149,10 @@ option.displayNone
 	display:none;
 }
 
-div.seleccion
+select.seleccion
 {
-	margin : 8px;
-	margin-bottom : 16px;
+    font-size: medium;
+	margin-bottom : 10px;
 }
 
 /*select#MainMobileContent_stopList
