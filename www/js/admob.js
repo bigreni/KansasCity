@@ -54,9 +54,8 @@
 
    function checkFirstUse()
     {
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            //askRating();
-            //initApp();
-            $.mobile.loadingMessage = false;
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            askRating();
+            initApp();
     }
 
 function askRating()
