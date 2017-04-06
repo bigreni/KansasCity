@@ -9,7 +9,7 @@
     if (/(android)/i.test(navigator.userAgent)) {
         admobid = { // for Android
             banner: 'ca-app-pub-1683858134373419/7790106682',
-            interstitial:'ca-app-pub-1683858134373419/2390226688'
+            interstitial:'ca-app-pub-9249695405712287/8166772352'
             //banner: 'ca-app-pub-3886850395157773/3411786244'
             //interstitial: 'ca-app-pub-9249695405712287/3301233156'
         };
@@ -54,8 +54,8 @@
 
    function checkFirstUse()
     {
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            askRating();
-            initApp();
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            //askRating();
+            //initApp();
     }
 
 function askRating()
@@ -117,7 +117,7 @@ TransitMaster.StopTimes = function (options) {
             });
         }
 
-        getRoutes();
+       // getRoutes();
     }
 
 
@@ -136,7 +136,7 @@ TransitMaster.StopTimes = function (options) {
     }
 
     function getRoutes() {
-        $("#MainMobileContent_routeList").text("Loading	routes...");
+        //$("#MainMobileContent_routeList").text("Loading	routes...");
         $("#routeWait").removeClass("hidden");
 
         $.ajax({
@@ -187,7 +187,7 @@ TransitMaster.StopTimes = function (options) {
         $(list).empty();
         $("#MainMobileContent_stopList").empty();
         $(list).get(0).options.length = 0;
-        $("#MainMobileContent_directionList").text("Loading	directions...");
+        //$("#MainMobileContent_directionList").text("Loading	directions...");
         $("#directionWait").removeClass("hidden");
 
         $.ajax({
@@ -230,7 +230,7 @@ TransitMaster.StopTimes = function (options) {
         var list = $("#MainMobileContent_stopList");
 
         $(list).get(0).options.length = 0;
-        $("#MainMobileContent_stopList").text("Loading stops...");
+        //$("#MainMobileContent_stopList").text("Loading stops...");
         $("#stopWait").removeClass("hidden");
 
         $.ajax({
