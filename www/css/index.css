@@ -155,6 +155,18 @@ select.seleccion
 	margin-bottom : 10px;
 }
 
+select.ui-select div.ui-btn
+{
+    width:90vh;
+	background-color: #CCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+    text-align: left;
+    font-size: medium;
+	margin-bottom : 10px;
+}
 /*select#MainMobileContent_stopList
 {
     -webkit-appearance: none;
