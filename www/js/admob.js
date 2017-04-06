@@ -54,7 +54,7 @@
 
    function checkFirstUse()
     {
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            //askRating();
+			//TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            //askRating();
             //initApp();
     }
 
@@ -117,7 +117,7 @@ TransitMaster.StopTimes = function (options) {
             });
         }
 
-       // getRoutes();
+       getRoutes();
     }
 
 
