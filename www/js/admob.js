@@ -54,8 +54,8 @@
 
    function checkFirstUse()
     {
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            //askRating();
-            //initApp();
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            askRating();
+            initApp();
     }
 
 function askRating()
@@ -167,6 +167,7 @@ TransitMaster.StopTimes = function (options) {
                 $("#routeWait").addClass("hidden");
             }
         });
+        $("span").remove();
     }
 
     function getDirections() {
@@ -220,6 +221,7 @@ TransitMaster.StopTimes = function (options) {
                 $("#directionWait").addClass("hidden");
             }
         });
+        $("span").remove();
     }
 
     function getStops() {
@@ -263,6 +265,7 @@ TransitMaster.StopTimes = function (options) {
                 $("#stopWait").addClass("hidden");
             }
         });
+        $("span").remove();
     }
 
     function getArrivalTimes(refresh) {
@@ -314,6 +317,7 @@ TransitMaster.StopTimes = function (options) {
                 $("#stopWait").addClass("hidden");
             }
         });
+        $("span").remove();
     }
 
     function displayError(error) {
