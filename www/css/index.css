@@ -33,6 +33,7 @@ div#fullpage {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+    background-color: #CCC;
 }
 
 /* Landscape layout (with min-width) */
@@ -130,7 +131,7 @@ h1, h2
 	text-align: center;
 	color: #438ac5;
 	border-bottom: 2px solid #2d3437;
-	text-shadow: 1px 1px 1px #000;
+   	text-shadow: 1px 1px 1px #000;
 }
 
 select

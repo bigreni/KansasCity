@@ -5,21 +5,23 @@
             checkFirstUse();
         }
     }
-    var admobid = {};
-    if (/(android)/i.test(navigator.userAgent)) {
-        admobid = { // for Android
-            banner: 'ca-app-pub-1683858134373419/7790106682',
-            interstitial:'ca-app-pub-9249695405712287/8166772352'
-            //banner: 'ca-app-pub-3886850395157773/3411786244'
-            //interstitial: 'ca-app-pub-9249695405712287/3301233156'
-        };
-    }
+
+  var admobid = {};
+  if( /(android)/i.test(navigator.userAgent) ) { // for android & amazon-fireos
+    admobid = {
+      banner: 'ca-app-pub-1683858134373419/7790106682', // or DFP format "/6253334/dfp_example_ad"
+      interstitial: 'ca-app-pub-9249695405712287/8166772352'
+    };
+  } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
+    admobid = {
+      banner: 'ca-app-pub-1683858134373419/7790106682', // or DFP format "/6253334/dfp_example_ad"
+      interstitial: 'ca-app-pub-9249695405712287/8166772352'
+    };
+  }
 
     function initApp() {
         if (!AdMob) { alert('admob plugin not ready'); return; }
         initAd();
-        // display the banner at startup
-        //createSelectedBanner();
         //display interstitial at startup
         loadInterstitial();
     }
@@ -66,6 +68,7 @@ function askRating()
   usesUntilPrompt: 10,
   promptAgainForEachNewVersion: true,
   storeAppURL: {
+                ios: '',
                 android: 'market://details?id=com.kc.withads'
                }
 };
@@ -168,6 +171,7 @@ TransitMaster.StopTimes = function (options) {
             }
         });
         $("span").remove();
+        $(".dropList").select2();
     }
 
     function getDirections() {
@@ -222,6 +226,7 @@ TransitMaster.StopTimes = function (options) {
             }
         });
         $("span").remove();
+        $(".dropList").select2();
     }
 
     function getStops() {
@@ -266,6 +271,7 @@ TransitMaster.StopTimes = function (options) {
             }
         });
         $("span").remove();
+        $(".dropList").select2();
     }
 
     function getArrivalTimes(refresh) {
@@ -318,6 +324,7 @@ TransitMaster.StopTimes = function (options) {
             }
         });
         $("span").remove();
+        $(".dropList").select2();
     }
 
     function displayError(error) {
