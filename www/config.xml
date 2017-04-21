@@ -26,7 +26,7 @@ xmlns:gap="http://phonegap.com/ns/1.0"
     <preference name="ios-statusbarstyle" value="black" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="SplashScreenDelay" value="0"/>
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
