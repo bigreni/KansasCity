@@ -68,7 +68,7 @@ function askRating()
   usesUntilPrompt: 10,
   promptAgainForEachNewVersion: true,
   storeAppURL: {
-                ios: '',
+                ios: '1225698349',
                 android: 'market://details?id=com.kc.withads'
                }
 };
@@ -120,7 +120,7 @@ TransitMaster.StopTimes = function (options) {
             });
         }
 
-       getRoutes();
+        getRoutes();
     }
 
 
@@ -259,7 +259,7 @@ TransitMaster.StopTimes = function (options) {
                     //$(list).get(0).options[$(list).get(0).options.length] = new Option(item.name, item.id);
                 });
 
-                 checkListCookie("stop", "MainMobileContent_stopList");
+                checkListCookie("stop", "MainMobileContent_stopList");
 
                 initialView = false;
             },
