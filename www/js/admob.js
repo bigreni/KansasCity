@@ -51,13 +51,13 @@
     }
 
     function loadInterstitial() {
-        AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: false, autoShow: true });
+        AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: true, autoShow: true });
     }
 
    function checkFirstUse()
     {
-			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            askRating();
-            initApp();
+			TransitMaster.StopTimes({arrivals: true, headingLabel: "Arrival"});            initApp();
+            askRating();
     }
 
 function askRating()
