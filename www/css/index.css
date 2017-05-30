@@ -36,6 +36,55 @@ div#fullpage {
 	padding: 0;
 }
 
+a.langOption{
+    text-decoration: none;
+}
+
+a:link
+{
+    color: #333;
+    text-decoration: none;
+}
+
+/*a.linklocal:link
+{
+    color: #333;    
+}*/
+
+/* visited link */
+a:visited
+{
+    color: #333;
+}
+
+/* mouse over link */
+a:hover
+{
+    color: #333;
+}
+
+/* selected link */
+a:active
+{
+    color: #333;
+} 
+
+h4.selectLanguage {
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    background-color: #82bef0;
+}
+
+h3 {
+margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0 10px 0 10px;
+}
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -130,7 +179,6 @@ h1, h2
 	margin-left: auto; margin-right: auto;
 	text-align: center;
 	color: #438ac5;
-	border-bottom: 2px solid #2d3437;
    	text-shadow: 1px 1px 1px #000;
 }
 
